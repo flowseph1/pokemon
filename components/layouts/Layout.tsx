@@ -15,9 +15,9 @@ export const Layout: FC<Props> = ({ children, title }) => {
                 {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
                 <title>{title || 'Pokemon App'}</title>
                 <meta name="author" content="Jose Acosta" />
-                <meta name="description" content="Informacion sobre el pokemon" />
+                <meta name="description" content={`Informacion sobre el ${title}`} />
                 <meta name="keywords" content="XXXX, pokemon, pokedex" />
-                <meta property="og:title" content="How to Become an SEO Expert (8 Steps)" />
+                <meta property="og:title" content={`Informacion sobre el ${title}`} />
                 <meta property="og:description" content="Get from SEO newbie to SEO pro in 8 simple steps." />
                 <meta
                     property="og:image"
